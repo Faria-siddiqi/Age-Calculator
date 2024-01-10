@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.Container {
+    background: #4682B4;
+    height: 100vh;
+}
+
+.sub-container {
+    background: #B0C4DE;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.sub-container h1 {
+    letter-spacing: 5px;
+    font-weight: 700;
+    margin-bottom: -3%;
+}
+
+.sub-container button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 5px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.sub-container button:hover {
+    background: none;
+    color: black;
+    border: 2px solid black;
+}
+
+.dateStyling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.currentDate,
+.birthDate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+
+}
+
+input[type="date"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+}
